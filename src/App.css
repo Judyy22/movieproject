@@ -514,144 +514,72 @@ iframe {
 
 /* board write */
 
-@media (min-width: 800px) {
-    .boardinputArea {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-    .boardinputArea > div > div {
-        margin: 0px 10px;
-        width: 8%;
-        font-size: 20px;
-        text-align: center;
-    }
-    .boardinputArea > div > input {
-        height: 30px;
-        margin-right: 10px;
-        background: none;
-        border: 1px solid white;
-        border-radius: 3px;
-        color: white;
-        padding: 10px;
-    }
+.boardinputArea {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.boardinputArea > div {
+    margin: 0px 10px;
+    width: 8%;
+    font-size: 20px;
+    text-align: center;
+}
+.boardinputArea > input {
+    height: 30px;
+    margin-right: 10px;
+    background: none;
+    border: 1px solid white;
+    border-radius: 3px;
+    color: white;
+    padding: 10px;
+}
 
-    .boardinputArea > div > textarea {
-        width: 50%;
-        height: 60px;
-        margin-right: 10px;
-        background: none;
-        border: 1px solid white;
-        border-radius: 3px;
-        color: white;
-        padding: 10px;
-    }
+.boardinputArea > textarea {
+    width: 50%;
+    height: 60px;
+    margin-right: 10px;
+    background: none;
+    border: 1px solid white;
+    border-radius: 3px;
+    color: white;
+    padding: 10px;
+}
 
-    .boardItem {
-        border: 1px solid white;
-        padding: 20px;
-    }
-    .borderitemname {
-        margin-bottom: 10px;
-    }
-    .borderitemtitle {
-        padding: 10px;
-        border-bottom: 1px dashed white;
-    }
-    .borderitemcontent {
-        margin-top: 15px;
-        padding: 0px 15px;
-    }
+.boardItem {
+    border: 1px solid white;
+    padding: 20px;
+}
+.borderitemname {
+    margin-bottom: 10px;
+}
+.borderitemtitle {
+    padding: 10px;
+    border-bottom: 1px dashed white;
+}
+.borderitemcontent {
+    margin-top: 15px;
+    padding: 0px 15px;
+}
 
-    .boardwritebutton {
-        background-color: red;
-        border: none;
-        width: 60px;
-        height: 30px;
-        font-size: 18px;
-        color: white;
-        border-radius: 5px;
-    }
+.boardwritebutton {
+    background-color: red;
+    border: none;
+    width: 60px;
+    height: 30px;
+    font-size: 18px;
+    color: white;
+    border-radius: 5px;
+}
 
-    .boardwritebutton:hover {
-        background-color: #f89090;
-    }
+.boardwritebutton:hover {
+    background-color: #f89090;
+}
 
-    .boardwritebutton:active {
-        background-color: #690101;
-    }
+.boardwritebutton:active {
+    background-color: #690101;
 }
 @media (max-width: 800px) {
-    .boardinputArea > div {
-        display: flex;
-        margin: 20px 0px;
-    }
-
-    .medianame {
-        margin-left: 50px;
-        height: 30px;
-        margin-left: 10px;
-        background: none;
-        border: 1px solid white;
-        border-radius: 3px;
-        color: white;
-        padding: 10px;
-    }
-
-    .mediatitle {
-        height: 30px;
-        margin-left: 10px;
-        background: none;
-        border: 1px solid white;
-        border-radius: 3px;
-        color: white;
-        padding: 10px;
-    }
-
-    .boardinputArea > div > textarea {
-        width: 50%;
-        height: 60px;
-        margin-right: 10px;
-        background: none;
-        border: 1px solid white;
-        border-radius: 3px;
-        color: white;
-        padding: 10px;
-    }
-
-    .boardItem {
-        border: 1px solid white;
-        padding: 20px;
-    }
-    .borderitemname {
-        margin-bottom: 10px;
-    }
-    .borderitemtitle {
-        padding: 10px;
-        border-bottom: 1px dashed white;
-    }
-    .borderitemcontent {
-        margin-top: 15px;
-        padding: 0px 15px;
-    }
-
-    .boardwritebutton {
-        background-color: red;
-        border: none;
-        width: 60px;
-        height: 30px;
-        font-size: 18px;
-        color: white;
-        border-radius: 5px;
-    }
-
-    .boardwritebutton:hover {
-        background-color: #f89090;
-    }
-
-    .boardwritebutton:active {
-        background-color: #690101;
-    }
 }
