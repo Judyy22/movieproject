@@ -3,11 +3,8 @@ import { Navbar, Container, Form, Button, Nav } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useDispatch } from "react-redux";
-import { movieAction } from "../redux/Actions/movieAction";
 
 const Navigation = () => {
-    const dispatch = useDispatch();
     const navigate = useNavigate();
     const [search, setSearch] = useState();
 
@@ -19,10 +16,8 @@ const Navigation = () => {
     const searchClick = (e) => {
         e.preventDefault();
         if (search != "") {
-            dispatch(movieAction.getSearchMovie(search));
             navigate("/movies", { state: { search: search } });
         } else {
-            dispatch(movieAction.getMovies());
             navigate("/movies");
         }
     };
