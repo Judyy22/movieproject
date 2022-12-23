@@ -25,7 +25,7 @@ const Movies = () => {
             <div>
                 <Header item={"검색결과"} />
                 <div className="container">
-                    <div>검색 결과 : {searchMovie.total_results}개</div>
+                    <div>검색 결과 : {searchMovie?.total_results}개</div>
                     <div className="row">
                         {searchMovie?.results.map((item) => (
                             <MovieList item={item} />

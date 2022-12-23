@@ -3,9 +3,12 @@ import { Navbar, Container, Form, Button, Nav } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useDispatch } from "react-redux";
+import { movieAction } from "../redux/Actions/movieAction";
 
 const Navigation = () => {
     const navigate = useNavigate();
+    const dispatch = useDispatch();
     const [search, setSearch] = useState();
 
     const getkeyword = (event) => {
@@ -16,11 +19,13 @@ const Navigation = () => {
     const searchClick = (e) => {
         e.preventDefault();
         if (search != "") {
+            dispatch(movieAction.getSearchMovie(search));
             navigate("/movies", { state: { search: search } });
         } else {
             navigate("/movies");
         }
     };
+    console.log("서치결과", search);
     return (
         <Navbar className="nav-background" variant="dark" expand="lg">
             <Container fluid>
